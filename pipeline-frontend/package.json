@@ -1,0 +1,30 @@
+{
+  "name": "pipeline-frontend",
+  "version": "1.0.0",
+  "description": "管道信息智能查询系统前端",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "vue": "^3.3.4",
+    "ant-design-vue": "^4.0.7",
+    "@ant-design/icons-vue": "^7.0.1",
+    "axios": "^1.6.0",
+    "echarts": "^5.4.3",
+    "vue-router": "^4.2.5",
+    "pinia": "^2.1.7"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^5.0.8",
+    "@vue/compiler-sfc": "^3.3.4",
+    "vue-cli-plugin-vuetify": "^2.5.8"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+} 

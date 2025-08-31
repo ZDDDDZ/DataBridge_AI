@@ -1,0 +1,28 @@
+# FastAPI Web框架
+fastapi
+uvicorn
+
+# 数据库相关
+pymysql
+mysql-connector-python
+
+# AI和自然语言处理
+langchain
+langchain-community
+requests
+
+# 数据处理
+pydantic
+python-multipart
+
+# 配置管理
+python-dotenv
+
+# 日志和调试
+python-json-logger
+
+# HTTP客户端
+httpx
+
+# 阿里云SDK
+dashscope 

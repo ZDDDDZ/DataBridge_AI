@@ -1,0 +1,331 @@
+/**
+ * 全局样式定义
+ * 管道信息智能查询系统
+ */
+
+/* 全局重置和基础样式 */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f0f2f5;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 通用工具类 */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-primary {
+  color: #1890ff;
+}
+
+.text-success {
+  color: #52c41a;
+}
+
+.text-warning {
+  color: #faad14;
+}
+
+.text-error {
+  color: #f5222d;
+}
+
+.text-secondary {
+  color: #8c8c8c;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+/* 布局工具类 */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+/* 间距工具类 */
+.mt-8 { margin-top: 8px; }
+.mt-16 { margin-top: 16px; }
+.mt-24 { margin-top: 24px; }
+.mt-32 { margin-top: 32px; }
+
+.mb-8 { margin-bottom: 8px; }
+.mb-16 { margin-bottom: 16px; }
+.mb-24 { margin-bottom: 24px; }
+.mb-32 { margin-bottom: 32px; }
+
+.ml-8 { margin-left: 8px; }
+.ml-16 { margin-left: 16px; }
+.ml-24 { margin-left: 24px; }
+
+.mr-8 { margin-right: 8px; }
+.mr-16 { margin-right: 16px; }
+.mr-24 { margin-right: 24px; }
+
+.pt-8 { padding-top: 8px; }
+.pt-16 { padding-top: 16px; }
+.pt-24 { padding-top: 24px; }
+
+.pb-8 { padding-bottom: 8px; }
+.pb-16 { padding-bottom: 16px; }
+.pb-24 { padding-bottom: 24px; }
+
+.pl-8 { padding-left: 8px; }
+.pl-16 { padding-left: 16px; }
+.pl-24 { padding-left: 24px; }
+
+.pr-8 { padding-right: 8px; }
+.pr-16 { padding-right: 16px; }
+.pr-24 { padding-right: 24px; }
+
+/* 聊天组件样式 */
+.chat-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.chat-messages {
+  padding: 16px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.chat-message {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: flex-start;
+}
+
+.chat-message.user {
+  flex-direction: row-reverse;
+}
+
+.chat-message.assistant {
+  flex-direction: row;
+}
+
+.chat-avatar {
+  flex-shrink: 0;
+  margin: 0 12px;
+}
+
+.chat-content {
+  max-width: 70%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.chat-message.user .chat-content {
+  background: #1890ff;
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.chat-message.assistant .chat-content {
+  background: #f6f6f6;
+  color: #333;
+  border-bottom-left-radius: 4px;
+}
+
+.chat-input {
+  padding: 16px;
+  border-top: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+/* 图表容器样式 */
+.chart-container {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.chart-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.chart-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* 数据表格样式 */
+.data-table-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* 加载状态样式 */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  flex-direction: column;
+}
+
+.loading-text {
+  margin-top: 16px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* 空状态样式 */
+.empty-state {
+  text-align: center;
+  padding: 48px 24px;
+  color: #8c8c8c;
+}
+
+.empty-state-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.3;
+}
+
+.empty-state-text {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.empty-state-description {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* 错误状态样式 */
+.error-state {
+  text-align: center;
+  padding: 48px 24px;
+  color: #f5222d;
+}
+
+.error-state-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .chat-content {
+    max-width: 85%;
+  }
+  
+  .chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .chart-controls {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-content {
+    max-width: 90%;
+  }
+  
+  .chart-container {
+    padding: 16px;
+  }
+} 
